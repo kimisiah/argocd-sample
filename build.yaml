@@ -24,3 +24,4 @@ spec:
     to:
       kind: ImageStreamTag
       name: "ss-ocp-dev-nginx:latest"
+      namespace: ss-ocp-dev-nginx
