@@ -15,6 +15,5 @@ spec:
   to:
     kind: Service
     name: ss-ocp-dev-nginx
-    namespace: ss-ocp-dev-nginx
     weight: 100
   wildcardPolicy: None
