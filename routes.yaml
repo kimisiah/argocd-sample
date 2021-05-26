@@ -4,6 +4,7 @@ metadata:
   labels:
     app: ss-ocp-dev-nginx
   name: ss-ocp-dev-nginx
+  namespace: ss-ocp-dev-nginx
 spec:
    hostname: nginx.vhi-ss-ocp-dev.vhitestcloud.net
   port:
