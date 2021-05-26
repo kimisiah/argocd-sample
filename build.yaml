@@ -10,8 +10,8 @@ spec:
     dockerfile: |
       FROM centos:7
       RUN yum install -y epel-release && \
-          yum repolist && \
-          yum install pkg1 && \
+          yum clean all && \
+          yum --disablerepo="epel" update curl && \
           yum install -y nginx
 
       CMD /usr/sbin/nginx -g 'daemon off;'
