@@ -2,4 +2,3 @@ apiVersion: image.openshift.io/v1
 kind: ImageStream
 metadata:
   name: ss-ocp-dev-nginx
-  namespace: ss-ocp-dev-nginx
