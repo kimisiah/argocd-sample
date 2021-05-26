@@ -6,6 +6,7 @@ metadata:
 spec:
   runPolicy: Serial
   source:
+    type: "Dockerfile"
     dockerfile: |
       FROM centos:7
       RUN yum install -y epel-release && \
