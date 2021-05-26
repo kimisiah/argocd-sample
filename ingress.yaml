@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  labels:
+    kubernetes.io/ingress.class: "gw-kong-enterprise-dev"
+  name: ss-ocp-dev-nginx
+  namespace: ss-ocp-dev-nginx
+spec:
+  rules:
+  - host: nginx-ingress.vhi-ss-ocp-dev.vhitest.cloud
+    http:
+     paths:
+     - path: /
+       backend:
+        serviceName: ss-ocp-dev-nginx
+        servicePort: 80
