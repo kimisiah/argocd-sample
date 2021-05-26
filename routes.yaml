@@ -6,7 +6,7 @@ metadata:
   name: ss-ocp-dev-nginx
   namespace: ss-ocp-dev-nginx
 spec:
-   hostname: nginx.vhi-ss-ocp-dev.vhitestcloud.net
+  host: nginx.vhi-ss-ocp-dev.vhitestcloud.net
   port:
     targetPort: nginx
   tls:
