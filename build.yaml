@@ -11,7 +11,7 @@ spec:
       FROM centos:7
       RUN yum install -y epel-release && \
           yum clean all && \
-          yum --disablerepo="epel" update curl && \
+          yum --disablerepo="epel" update curl -y && \
           yum install -y nginx
 
       CMD /usr/sbin/nginx -g 'daemon off;'
