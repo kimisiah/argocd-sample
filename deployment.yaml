@@ -12,7 +12,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx:latest
+      - image: "image-registry.openshift-image-registry:5000/ss-ocp-dev-nginx/ss-ocp-dev-nginx"
         name: ss-ocp-dev-nginx
         ports:
         - containerPort: 80
