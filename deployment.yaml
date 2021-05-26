@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ss-ocp-dev-nginx
+  namespace: ss-ocp-dev-nginx
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - image: nginx:latest
+        name: ss-ocp-dev-nginx
+        ports:
+        - containerPort: 80
