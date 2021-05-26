@@ -10,10 +10,9 @@ spec:
     dockerfile: |
       FROM centos:7
       RUN yum install -y epel-release && \
+          yum repolist && \
+          yum install pkg1 && \
           yum install -y nginx
-
-      COPY index.html /usr/share/nginx/html
-      COPY nginx.conf /etc/nginx/nginx.conf
 
       CMD /usr/sbin/nginx -g 'daemon off;'
 
