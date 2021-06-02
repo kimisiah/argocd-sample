@@ -6,12 +6,12 @@ metadata:
   name: ss-ocp-dev-nginx
   namespace: ss-ocp-dev-nginx
 spec:
-  host: nginx.vhi-ss-ocp-dev.vhitest.cloud
+  host: nginx.apps.vhi-ss-ocp-dev.vhitest.cloud
   port:
     targetPort: nginx
   tls:
     insecureEdgeTerminationPolicy: Redirect
-    termination: edge
+    termination: reencrypt
   to:
     kind: Service
     name: ss-ocp-dev-nginx
