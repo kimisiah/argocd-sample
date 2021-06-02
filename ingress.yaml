@@ -9,7 +9,7 @@ metadata:
   namespace: ss-ocp-dev-nginx
 spec:
   rules:
-  - host: nginx-ingress.app.vhi-ss-ocp-dev.vhitest.cloud
+  - host: nginx-ingress.apps.vhi-ss-ocp-dev.vhitest.cloud
     http:
      paths:
      - path: /
